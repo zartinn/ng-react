@@ -3,5 +3,16 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+      "demo": {
+        "projectType": "application",
+        "root": "projects/demo/",
+        "sourceRoot": "projects/demo/src",
+        "architect": {
+            "serve": {
+                "builder": "ng-react:serve"
+            }
+        }
+      }
+  },
+  "defaultProject": "demo"
 }

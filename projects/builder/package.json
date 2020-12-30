@@ -1,0 +1,34 @@
+{
+    "name": "ng-react",
+    "version": "0.0.1",
+    "license": "MIT",
+    "author": {
+      "name": "Martin Zachoszcz"
+    },
+    "schematics": "./schematics/collection.json",
+    "builders": "./builders/builders.json",
+    "dependencies": {
+        "@angular-devkit/build-angular": "~0.1100.0",
+        "@angular-devkit/architect": "~0.1100.0",
+        "@angular/cli": "^11.0.0",
+        "rxjs": "~6.6.0",
+        "webpack-merge": "^5.0.0",
+        "webpack": "^5.0.0",
+        "webpack-cli": "^4.0.0",
+        "@babel/cli": "^7.1.0",
+        "@babel/core": "^7.1.0",
+        "@babel/preset-env": "^7.1.0",
+        "babel-loader": "^8.0.2",
+        "babel-preset-react-app": "^10.0.0",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^1.0.0",
+        "file-loader": "^6.2.0",
+        "html-webpack-plugin": "^4.5.0",
+        "mini-css-extract-plugin": "^1.3.3",
+        "sass-loader": "^10.1.0",
+        "source-map-loader": "^2.0.0",
+        "style-loader": "^0.23.0",
+        "webpack-dev-server": "^3.11.1"
+    }
+  }
+  

@@ -1,0 +1,9 @@
+{
+    "builders": {
+        "serve": {
+            "implementation": "./serve",
+            "schema": "./serve/schema.json",
+            "description": "Used to serve react application using webpack and babel"
+        }
+    }
+}
