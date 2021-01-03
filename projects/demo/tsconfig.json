@@ -33,15 +33,15 @@
       "noFallthroughCasesInSwitch": true,
       "forceConsistentCasingInFileNames": true,
       "importHelpers": true,
-      "typeRoots" : ["node_modules/@types", "projects/demo/src/types.d.ts"],
+      "typeRoots" : ["node_modules/@types", "./src/types.d.ts"],
       "paths": {
         "@assets": [
-          "projects/demo/src/assets/*"
+          "./src/assets/*"
         ]
       }
     },
     "include": [
-      "projects/demo/src/*.tsx",
-      "projects/demo/src/*.d.ts"
+      "./src/*.tsx",
+      "./src/*.d.ts"
     ]
   }

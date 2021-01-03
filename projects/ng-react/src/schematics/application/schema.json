@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "ng-react-application",
+    "title": "ng-react application schematic",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the new project.",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "x-prompt": "What name would you like to use for your new react application?"
+        },
+        "customWebpackConfig": {
+            "type": "boolean",
+            "description": "Set this when you want to provide a custom webpack config which should be merged with a default one",
+            "default": false
+        }
+    },
+    "required": ["name"],
+    "additionalProperties": false
+}

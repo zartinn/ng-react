@@ -1,0 +1,15 @@
+{
+    "$schema": "../../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+    "schematics": {
+        "ng-add": {
+            "factory": "./ng-add",
+            "schema": "./ng-add/schema.json",
+            "description": "Installs ng-react builder and add a new React application that can be used with Angular CLI"
+        },
+        "application": {
+            "factory": "./application",
+            "schema": "./application/schema.json",
+            "description": "Creates a new React application"
+        }
+    }
+}

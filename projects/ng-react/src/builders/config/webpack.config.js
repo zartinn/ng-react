@@ -4,8 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-// will be set by builders
 module.exports = () => {
+    // will be set by builders
     const basePath = process.env.projectRoot;
     const mode = process.argv.find(arg => arg.includes('--mode'));
     const isDev = !mode || mode.split('=')[1] === 'development';

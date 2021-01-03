@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "strictNullChecks": true,
+      "moduleResolution": "node",
+      "allowJs": true,
+      "noEmit": true,
+      "strict": true,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "skipLibCheck": true,
+      "allowSyntheticDefaultImports": true,
+      "jsx": "react-jsx",
+      "baseUrl": "./",
+      "lib": [
+        "es2015",
+        "dom.iterable",
+        "es2016.array.include",
+        "es2017.object",
+        "dom"
+      ],
+      "module": "esnext",
+      "removeComments": true,
+      "alwaysStrict": true,
+      "allowUnreachableCode": false,
+      "noImplicitAny": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "forceConsistentCasingInFileNames": true,
+      "importHelpers": true,
+      "typeRoots" : ["node_modules/@types", "./src/types.d.ts"],
+      "paths": {
+        "@assets": [
+          "./src/assets/*"
+        ]
+      }
+    },
+    "include": [
+      "./src/*.tsx",
+      "./src/*.d.ts"
+    ]
+  }

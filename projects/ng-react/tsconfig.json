@@ -4,7 +4,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "rootDir": "./src",
-    "outDir": "../../dist/builder",
+    "outDir": "../../dist/ng-react",
     "sourceMap": true,
     "skipLibCheck": true,
     "declaration": false,
@@ -20,6 +20,10 @@
     ],
   },
   "include": [
-      "./src/builders/**/*.ts"
+      "./src/builders/**/*.ts",
+      "./src/schematics/**/*.ts"
+  ],
+  "exclude": [
+    "./src/schematics/**/files/**/*.ts"
   ]
 }

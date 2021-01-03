@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "ng-react-ng-add",
+    "title": "ng-react ng-add schematic",
+    "type": "object",
+    "description": "Installs ng-react builder and add a new React application that can be used with Angular CLI",
+    "properties": {
+        "create-application": {
+            "description": "Wether to create a new application or not",
+            "type": "boolean"
+        },
+        "project-name": {
+            "type": "string",
+            "description": "The name of the new project.",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        }
+    }
+}

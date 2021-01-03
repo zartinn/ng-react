@@ -2,9 +2,9 @@
   "name": "ng-react",
   "version": "0.0.1",
   "scripts": {
-    "build-builder": "rimraf ./dist/builder && tsc -p projects/builder/tsconfig.json && npm run copy-pkg && npm run copy-static-files",
-    "copy-pkg": "copyfiles -u 2 projects/builder/package.json dist/builder",
-    "copy-static-files": "copyfiles -u 3 'projects/builder/src/**/*.json' projects/builder/src/builders/config/* dist/builder"
+    "build-builder": "rimraf ./dist/ng-react && tsc -p projects/ng-react/tsconfig.json && npm run copy-pkg && npm run copy-static-files",
+    "copy-pkg": "copyfiles -u 2 projects/ng-react/package.json dist/ng-react",
+    "copy-static-files": "copyfiles -u 3 'projects/ng-react/src/**/*.json' 'projects/ng-react/src/**/files/**/*' projects/ng-react/src/builders/config/* dist/ng-react"
   },
   "private": true,
   "devDependencies": {
@@ -24,6 +24,7 @@
     "copyfiles": "^2.4.1",
     "css-loader": "^1.0.0",
     "file-loader": "^6.2.0",
+    "fs-extra": "9.0.1",
     "html-webpack-plugin": "^4.5.0",
     "mini-css-extract-plugin": "^1.3.3",
     "node-sass": "^5.0.0",
@@ -43,5 +44,6 @@
     "webpack-cli": "^4.0.0",
     "webpack-dev-server": "^3.11.1",
     "webpack-merge": "^5.0.0"
-  }
+  },
+  "dependencies": {}
 }
