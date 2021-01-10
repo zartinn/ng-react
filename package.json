@@ -1,10 +1,10 @@
 {
-  "name": "ng-react",
+  "name": "@zartin/react-ng",
   "version": "0.0.1",
   "scripts": {
-    "build-builder": "rimraf ./dist/ng-react && tsc -p projects/ng-react/tsconfig.json && npm run copy-pkg && npm run copy-static-files",
-    "copy-pkg": "copyfiles -u 2 projects/ng-react/package.json dist/ng-react",
-    "copy-static-files": "copyfiles -u 3 'projects/ng-react/src/**/*.json' 'projects/ng-react/src/**/files/**/*' projects/ng-react/src/builders/config/* dist/ng-react"
+    "build-builder": "rimraf ./dist/react-ng && tsc -p projects/react-ng/tsconfig.json && npm run copy-pkg && npm run copy-static-files",
+    "copy-pkg": "copyfiles -u 2 projects/react-ng/package.json dist/react-ng",
+    "copy-static-files": "copyfiles -u 3 'projects/react-ng/src/**/*.json' 'projects/react-ng/src/**/files/**/*' projects/react-ng/src/builders/config/* dist/react-ng"
   },
   "private": true,
   "devDependencies": {

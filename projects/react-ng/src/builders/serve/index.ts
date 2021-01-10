@@ -46,7 +46,7 @@ function startWebpack(options, context): Observable<BuilderOutput> {
     return new Observable(observer => {
         const args = [
             'serve',
-            '-c node_modules/ng-react/builders/config/webpack.config.js'
+            '-c node_modules/@zartin/react-ng/builders/config/webpack.config.js'
         ];
         const cp: ChildProcess = spawn(resolve('node_modules', '.bin', 'webpack'), args, { shell: true });
         cp.stdout.on('data', data => {

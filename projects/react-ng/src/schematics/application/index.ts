@@ -56,7 +56,7 @@ function updateAngularJson(options: ApplicationOptions, appRoot) {
     projectType: ProjectType.Application,
     targets: {
       build: {
-        builder: 'ng-react:build',
+        builder: '@zartin/react-ng:build',
         // options: {
         //   outputPath: `dist/${options.name}`,
         //   assets: [
@@ -80,7 +80,7 @@ function updateAngularJson(options: ApplicationOptions, appRoot) {
         // },
       },
       serve: {
-        builder: 'ng-react:serve',
+        builder: '@zartin/react-ng:serve',
       },
     },
   };

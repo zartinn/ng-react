@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema",
-    "id": "ng-react-application",
-    "title": "ng-react application schematic",
+    "id": "@zartin/react-ng-application",
+    "title": "@zartin/react-ng application schematic",
     "type": "object",
     "properties": {
         "name": {

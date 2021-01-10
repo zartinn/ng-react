@@ -9,7 +9,7 @@
       "sourceRoot": "projects/demo/src",
       "architect": {
         "serve": {
-          "builder": "ng-react:serve"
+          "builder": "@zartin/react-ng:serve"
         }
       }
     }

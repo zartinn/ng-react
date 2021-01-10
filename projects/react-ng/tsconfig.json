@@ -4,7 +4,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "rootDir": "./src",
-    "outDir": "../../dist/ng-react",
+    "outDir": "../../dist/react-ng",
     "sourceMap": true,
     "skipLibCheck": true,
     "declaration": false,

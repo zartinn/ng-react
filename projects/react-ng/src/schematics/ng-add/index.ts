@@ -36,7 +36,7 @@ export default function(options: NgAddSchematicOptions): Rule {
 
 function createApplication(context, name) {
     context.addTask(
-        new RunSchematicTask('ng-react', 'application', {
+        new RunSchematicTask('@zartin/react-ng', 'application', {
             name
         })
     );

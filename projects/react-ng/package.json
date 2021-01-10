@@ -1,6 +1,6 @@
 {
-    "name": "ng-react",
-    "version": "0.0.1",
+    "name": "@zartin/react-ng",
+    "version": "0.0.3",
     "license": "MIT",
     "author": {
       "name": "Martin Zachoszcz"

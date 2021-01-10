@@ -4,7 +4,7 @@
         "ng-add": {
             "factory": "./ng-add",
             "schema": "./ng-add/schema.json",
-            "description": "Installs ng-react builder and add a new React application that can be used with Angular CLI"
+            "description": "Installs @zartin/react-ng builder and add a new React application that can be used with Angular CLI"
         },
         "application": {
             "factory": "./application",

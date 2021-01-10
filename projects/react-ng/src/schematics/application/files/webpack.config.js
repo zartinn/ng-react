@@ -6,8 +6,8 @@
 
 
 /**
- * This webpack config will be merged with the one from node_modules/ng-react/builders/config/webpack.config.js
- * See commented lines below which are set by default from node_modules/ng-react/builders/config/webpack.config.js
+ * This webpack config will be merged with the one from node_modules/@zartin/react-ng/builders/config/webpack.config.js
+ * See commented lines below which are set by default from node_modules/@zartin/react-ng/builders/config/webpack.config.js
  * Set manually one of these properties to overwrite the default values.
  */
 module.exports = () => {
