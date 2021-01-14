@@ -1,6 +1,6 @@
 {
   "name": "@zartin/react-ng",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "build-builder": "rimraf ./dist/react-ng && tsc -p projects/react-ng/tsconfig.json && npm run copy-pkg && npm run copy-static-files",
     "copy-pkg": "copyfiles -u 2 projects/react-ng/package.json dist/react-ng",

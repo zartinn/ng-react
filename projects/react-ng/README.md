@@ -1,4 +1,4 @@
-# @zartin/react-ng 0.0.3
+# @zartin/react-ng 0.0.5
 Serve, build and test React apps with the Angular CLI
 
 ## Installation

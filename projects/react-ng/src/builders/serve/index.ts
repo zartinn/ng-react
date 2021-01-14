@@ -37,7 +37,7 @@ export function execute(options: ServeOptions, context: BuilderContext): Observa
                 return of({ success: false });
             }
             process.env.projectRoot = root;
-            return startWebpack([], context);
+            return startWebpack(options, context);
         })
     );
 }
