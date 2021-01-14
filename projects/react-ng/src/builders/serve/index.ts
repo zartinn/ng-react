@@ -48,6 +48,7 @@ function startWebpack(options, context): Observable<BuilderOutput> {
             'serve',
             '-c node_modules/@zartin/react-ng/builders/config/webpack.config.js'
         ];
+        args.push(...getAdditionalArgs(options))
         const cp: ChildProcess = spawn(resolve('node_modules', '.bin', 'webpack'), args, { shell: true });
         cp.stdout.on('data', data => {
             // if (options.includes('--watch')) {
@@ -69,6 +70,14 @@ function startWebpack(options, context): Observable<BuilderOutput> {
             observer.complete();
         });
     });
+}
+
+function getAdditionalArgs(options: ServeOptions) {
+    const additionalArgs = [];
+    if (options.webpackConfigPath) {
+        additionalArgs.push('--merge -c ' + resolve(options.webpackConfigPath));
+    }
+    return additionalArgs;
 }
 
 function handleWatchBuildOutput(observer: Subscriber<BuilderOutput>, context: BuilderContext, data) {
